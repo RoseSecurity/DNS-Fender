@@ -4,7 +4,7 @@ RED='\033[01;31m'
 banner()
 {
 
-    echo -e "${RED}DDD  N   N  SSS      FFFF EEEE N   N DDD  EEEE RRRR  
+echo -e "${RED}DDD  N   N  SSS      FFFF EEEE N   N DDD  EEEE RRRR  
 D  D NN  N S         F    E    NN  N D  D E    R   R 
 D  D N N N  SSS  --- FFF  EEE  N N N D  D EEE  RRRR  
 D  D N  NN     S     F    E    N  NN D  D E    R R   
