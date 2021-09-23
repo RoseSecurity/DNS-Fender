@@ -5,7 +5,7 @@
 
 ## DNS-FENDER
 
-A Proof-of-Concept tool utilizing open DNS resolvers to produce an amplification attack against web servers. Using Shodan APIs and native Linux commands, this tool is in development to cripple web servers using spoofed DNS recursive queries. Recently, a 15 year old produced a 300 GB DoS attack against a well-known website in 50 lines of code. Though Cloudflare never revealed the source code, I thought I would take a stab at recreating the basic idea behind the attack. Any feedback, ways to strengthen the tool, and improvements are greatly appreciated. Feel free to develop and reuse this code! Let's make it even better!
+A Proof-of-Concept tool utilizing open DNS resolvers to produce an amplification attack against web servers. Using Shodan APIs and native Linux commands, this tool is in development to cripple web servers using spoofed DNS recursive queries. Recently, a 15 year old produced a 300 GB DoS attack against a well-known website using 50 lines of code. Though Cloudflare never revealed the source code, I thought I would take a stab at recreating the basic idea behind the attack. Any feedback, ways to strengthen the tool, and improvements are greatly appreciated. Feel free to develop and reuse this code! Let's make it even better!
  
 ## Background
 
@@ -56,4 +56,38 @@ A DNS server not allowing recursive queries will instead respond with an error m
 
 # DNS-FENDER Script
 
-Using Shodan APIs, *DNS-FENDER* identifies open resolvers across the internet, saves IP addresses to a CSV file, and runs the ```dig``` command against your target. This tool is still in development and any improves, ideas, or ways to make the code stronger is strongly appreciated!
+Using Shodan APIs, *DNS-FENDER* identifies open resolvers across the internet, saves IP addresses to a CSV file, and runs the ```dig``` command against your target using open DNS resolvers. This tool is still in development and any improvements, ideas, or ways to make the code stronger is strongly appreciated!
+
+# Installation
+
+To install the Shodan library, simply:
+
+```
+$ pip install shodan
+```
+
+Or if you don't have pip installed (which you should seriously install):
+
+```
+$ easy_install shodan
+```
+Or if you're running an older version of the Shodan Python library and want to upgrade:
+
+```
+easy_install -U shodan
+```
+
+You can get your API key from your Shodan account page located at:
+
+```
+https://account.shodan.io/
+```
+
+Then just:
+
+```
+$ chmod +x DNS-Fender.sh
+$ ./DNS-Fender.sh
+```
+
+Enter your API Key and Target to attack!
