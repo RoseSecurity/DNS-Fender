@@ -19,6 +19,8 @@ There are two criteria for a good amplification attack vector: 1) query can be s
 
 DNS queries are typically transmitted over UDP, meaning that, like ICMP queries used in a SMURF attack, they are fire and forget. As a result, their source attribute can be spoofed and the receiver has no way of determining its veracity before responding.
 
+![Dos](https://user-images.githubusercontent.com/72598486/134555284-7cb380e9-1937-48fc-8827-e6d3a21221af.png)
+
 ## Identifying Open Resolvers
 
 Using the ```dig``` command, we can identify if the DNS server is an open resolver:
