@@ -3,4 +3,5 @@
 1) Use multithreading to speed up script
 2) Pipe more IPs into file to allow more than 100 open DNS resolvers
 3) Clean up banner and progress bar
+  - (xSwagaSaurusRex) Limit banner to 80 characters for optimized use in minimized terminal
 4) Test against target to create a graphical representation of attack
