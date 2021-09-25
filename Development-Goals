@@ -6,3 +6,4 @@
   - (xSwagaSaurusRex) Limit banner to 80 characters for optimized use in minimized terminal
 4) Test against target to create a graphical representation of attack
 5) Port to Python
+6) Using Tkinter, develop web app as front end
