@@ -3,7 +3,7 @@
 </p>
 
 
-## DNS-FENDER
+## 	:tornado: DNS-FENDER
 
 A Proof-of-Concept tool utilizing open DNS resolvers to produce an amplification attack against web servers. Using Shodan APIs and native Linux commands, this tool is in development to cripple web servers using spoofed DNS recursive queries. Recently, a 15 year old produced a 300 GB DoS attack against a well-known website using 50 lines of code. Though Cloudflare never revealed the source code, I thought I would take a stab at recreating the basic idea behind the attack. Any feedback, ways to strengthen the tool, and improvements are greatly appreciated. Feel free to develop and reuse this code! Let's make it even better!
  
